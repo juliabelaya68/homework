@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+
+.header {
+  background-color: rgb(225, 255, 143);
+  background-image: url(./image/starHead.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 175px) calc(50% - 165px);
+  background-size: auto;
+}
+
+.header__box {
+  padding-left: 120px;
+  padding-top: 196px;
+  max-width: 768px;
+  padding-right: 120px;
+  padding-bottom: 156px;
+}
+
+.header__heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  padding-bottom: 24px;
+  color: rgb(32, 32, 39);
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.header__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+
+.header__button {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  width: 247px;
+  height: 66px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.header__button:hover {
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  background: rgb(255, 255, 255);
+}
+
+.header__line {
+  background-color: rgb(188, 236, 48);
+  height: 90px;
+}
+
+.main {
+  background-color: rgb(32, 32, 39);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.collection-games__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  padding-bottom: 24px;
+  padding-top: 94px;
+}
+
+.collection-games__text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 72px;
+}
+
+.game-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 50px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  transition: all 0.5s;
+  width: 378px;
+  height: 473px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-medium {
+  width: 378px;
+  height: 512px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.card-medium:hover {
+  transform: scale(1.1);
+}
+
+.card-big {
+  width: 378px;
+  height: 551px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.card-big:hover {
+  transform: scale(1.1);
+}
+
+.card__image {
+  height: 314px;
+
+}
+
+.card__info {
+  width: 378px;
+  height: 159px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+}
+
+.card__info-medium {
+  width: 314px;
+  height: 130px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+}
+
+.card__info-big {
+  width: 314px;
+  height: 169px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+
+}
+
+.game-number {
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  color: rgb(39, 26, 88);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+  
+  
+}
+
+.game-name {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 36px;
+  
+}
+
+.game-number {
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+}
+
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
+
+
+
