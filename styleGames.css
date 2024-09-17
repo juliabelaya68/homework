@@ -62,6 +62,8 @@ body {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .header__button:hover {
@@ -70,6 +72,7 @@ body {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 60px;
   background: rgb(255, 255, 255);
+  
 }
 
 .header__line {
@@ -194,8 +197,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
-  
-  
 }
 
 .game-name {
