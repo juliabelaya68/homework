@@ -6,7 +6,7 @@ alert(a);
 
 //Задание 2//
 const releaseIphone = 2007;
-console.log(releaseIphone);
+alert(releaseIphone);
 
 //Задание 3//
 const nameCreatorJs = 'Брендан Эйх';
@@ -23,13 +23,13 @@ alert(a / b);
 
 //Задание 5//
 let result = 2 ** 5;
-alert('результат задания равен ${result}');
+alert(result);
 
 //Задание 6//
 let a = 9;
 let b = 2;
-let rest = a %
-    alert(rest);
+let rest = a % b;
+alert(rest);
 
 
 //Задание 7//
@@ -38,12 +38,12 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num -= 1;
+num += 1;
 num -= 1;
 alert(num);
 
 //Задание 8//
-let age = promt('Сколько вам лет?');
+let age = prompt('Сколько вам лет?');
 alert(age);
 
 //Задание 9//

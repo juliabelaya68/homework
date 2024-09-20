@@ -13,11 +13,13 @@ body {
 }
 
 .header {
+  height: 800px;
+  background: url(image/starBig.svg) no-repeat right top,
+  url(image/Star2.svg) no-repeat 5% 94px,
+  url(image/Star3.svg) no-repeat 10% 59px,
+  url(image/Star\ 4.svg) no-repeat 820px 550px,
+  url(image/Star\ 5.svg) no-repeat 750px 500px;
   background-color: rgb(225, 255, 143);
-  background-image: url(./image/starHead.png);
-  background-repeat: no-repeat;
-  background-position: calc(50% + 175px) calc(50% - 165px);
-  background-size: auto;
 }
 
 .header__box {
@@ -77,6 +79,13 @@ body {
 .header__line {
   background-color: rgb(188, 236, 48);
   height: 90px;
+  width: 100%;
+  background-image: url(image/line.png);
+
+}
+
+.line-mobil {
+  display: none;
 }
 
 .main {
@@ -322,11 +331,15 @@ body {
   }
 
   .header {
-    background-color: rgb(225, 255, 143);
-    background-image: url(./image/starHead.png);
-    background-repeat: no-repeat;
-    background-position: calc(50% + 175px) calc(50% - 165px);
-    background-size: auto;
+    height: 700px;
+    background-image: none;
+    background-image: url(image/mobBigStar.svg),
+    url(image/mobStar2.svg),
+    url(image/mobStar3.svg),
+    url(image/mobStar4.svg),
+    url(image/mobStar5.svg);
+    
+    
   }
 
   .header__box {
@@ -361,12 +374,14 @@ body {
     height: 55px;
   }
 
-  .animated-line {
-    height: 52px;
-  }
-
   .header__line {
-    height: 52px;
+    background-image: none;
+    margin-top: 60px;
+  }
+  
+  .line-mobil {
+    display: block;
+    margin-top: 60px;
   }
 
   .collection-games__title {
@@ -411,6 +426,7 @@ body {
     line-height: 39px;
     
   }
+  
   .game-cart__condition {
     font-size: 16px;
     font-weight: 400;
@@ -450,17 +466,20 @@ body {
     padding-bottom: 48px;
   }
 
-
-  .footer__title {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: center;
+  .footer {
+    height: 100px;
   }
 
 
-
+  .footer__title {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 
 }
 
