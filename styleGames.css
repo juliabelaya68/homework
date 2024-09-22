@@ -89,6 +89,11 @@ body {
 }
 
 .main {
+  background: url(image/starMain.svg) 100% 65px,
+  url(image/Star\ 8.svg)no-repeat 97% 4900px,
+  url(image/Star\ 10.svg) no-repeat 93% 4960px,
+  url(image/Star\ 11.svg) no-repeat 2% 750px,
+  url(image/Star\ 12.svg) no-repeat no-repeat 3% 800px;
   background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
   background-size: auto;
@@ -196,7 +201,6 @@ body {
   width: 108px;
   height: 36px;
   color: rgb(39, 26, 88);
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
