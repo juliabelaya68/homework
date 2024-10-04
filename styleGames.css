@@ -17,13 +17,13 @@ body {
   background: url(image/starBig.svg) no-repeat right top,
   url(image/Star2.svg) no-repeat 5% 94px,
   url(image/Star3.svg) no-repeat 10% 59px,
-  url(image/Star\ 4.svg) no-repeat 820px 550px,
-  url(image/Star\ 5.svg) no-repeat 750px 500px;
+  url(image/Star\ 4.svg) no-repeat 1120px 550px,
+  url(image/Star\ 5.svg) no-repeat 1050px 500px;
   background-color: rgb(225, 255, 143);
 }
 
 .header__box {
-  padding-left: 120px;
+  padding-left: 160px;
   padding-top: 196px;
   max-width: 768px;
   padding-right: 120px;
