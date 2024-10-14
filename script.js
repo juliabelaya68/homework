@@ -1,3 +1,4 @@
+//игра угадай число
 function oneGame() {
     let n = Math.floor(Math.random() * 101);
     console.log(n);
@@ -19,12 +20,13 @@ function oneGame() {
     }
 }
 
+//игра камень ножницы бумага
 
 const arr = ['камень', 'ножницы', 'бумага'];
 
 function ockPaperScissors() {
 
-    const useChoice = prompt('Сделай выбор! Камень,ножницы или бумага?');
+    const useChoice = prompt('Сделай выбор! Камень,ножницы,бумага!');
 
     const random = Math.floor(Math.random() * arr.length);
 
@@ -51,3 +53,34 @@ function ockPaperScissors() {
 }
 
 rockPaperScissors();
+
+
+//Игра угадай число, нужно переделть и доработать не получается все связать вместе
+
+const arithmetic = ['+', '-', '*', '/'];
+
+const number1 = Math.floor(Math.random() * 11); Math.floor(Math.random() * 101);
+const number2 = Math.floor(Math.random() * 11);
+const generatesArithmetic = Math.floor(Math.random() * arithmetic.length);
+const generates = arithmetic[generatesArithmetic];
+
+function taskArithmetic() {
+    return `${number1} ${generates} ${number2}`;
+}
+alert(taskArithmetic());
+const result = taskArithmetic;
+
+
+const userAnswer = prompt("Посчитай и запиши ответ");
+if (isNaN(userAnswer)) {
+    alert('Ошибка ввода!Введи число');
+} else if (userAnswer === result) {
+    alert('Верный ответ!');
+} else {
+    alert('Не верно.Попробуй еще!');
+}
+
+
+
+
+taskArithmetic();
