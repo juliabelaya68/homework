@@ -23,10 +23,8 @@ body {
 }
 
 .header__box {
-  padding-left: 160px;
   padding-top: 196px;
   max-width: 768px;
-  padding-right: 120px;
   padding-bottom: 156px;
 }
 
@@ -93,7 +91,7 @@ body {
   url(image/Star\ 8.svg)no-repeat 97% 4900px,
   url(image/Star\ 10.svg) no-repeat 93% 4960px,
   url(image/Star\ 11.svg) no-repeat 2% 750px,
-  url(image/Star\ 12.svg) no-repeat no-repeat 3% 800px;
+  url(image/Star\ 12.svg) no-repeat calc(100% - 300px);
   background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
   background-size: auto;

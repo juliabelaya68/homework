@@ -18,3 +18,36 @@ function oneGame() {
         }
     }
 }
+
+
+const arr = ['камень', 'ножницы', 'бумага'];
+
+function ockPaperScissors() {
+
+    const useChoice = prompt('Сделай выбор! Камень,ножницы или бумага?');
+
+    const random = Math.floor(Math.random() * arr.length);
+
+    const pcCoice = arr[random];
+
+    console.log(pcCoice);
+    console.log(useChoice);
+
+
+    if (useChoice.toLowerCase() === pcCoice) {
+        alert(`ничья! компьютер выбрал тоже ${pcCoice}!`)
+
+    } else if ((useChoice.toLowerCase() === "камень" && pcCoice === "ножницы") ||
+
+        (useChoice.toLowerCase() === 'ножницы' && pcCoice === 'бумага') ||
+
+        (useChoice.toLowerCase() === 'бумага' && pcCoice === 'камень')
+    ) {
+
+        alert(`вы победили! выбор компьютера ${pcCoice}!`)
+    } else {
+        alert(`победил компьютер! выбор компьютера ${pcCoice}!`)
+    }
+}
+
+rockPaperScissors();
