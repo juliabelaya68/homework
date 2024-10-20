@@ -105,3 +105,38 @@ function textGame() {
 }
 
 
+function startQuiz() {
+    const quiz = [
+        {
+            question: "Какого цвета небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+
+    let score = 0;
+
+    quiz.forEach((q, index) => {
+        const userAnswer = prompt(`${index + 1}. ${q.question}\n${q.options.join('\n')}`);
+        const selectedOption = parseInt(userAnswer);
+
+        if (selectedOption === q.correctAnswer) {
+            score++;
+            alert('Правильный ответ!');
+        } else {
+            alert('Ответ неправильный!');
+        }
+    });
+
+}
