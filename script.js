@@ -146,13 +146,24 @@ function startQuiz() {
 //В генераторе случайных цветов в игре сказано, 
 //что должен меняться рандомно цвет фона. В моей попытке меняется цвет фона, если я уберу цвет фона в классе main.
 
+//const changeColorButton = document.querySelector('#changeColorButton');
+
+//changeColorButton.addEventListener('click', function () {
+//
+//    const randomColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
+//
+//    document.body.style.backgroundColor = randomColor;
+//});
+
+//function getRandomNumber(max) {
+//    return Math.floor(Math.random() * (max + 1));
+//}
 const changeColorButton = document.querySelector('#changeColorButton');
 
 changeColorButton.addEventListener('click', function () {
-
     const randomColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
-
-    document.body.style.backgroundColor = randomColor;
+    const mainElement = document.querySelector('.main');
+    mainElement.style.backgroundColor = randomColor;
 });
 
 function getRandomNumber(max) {
