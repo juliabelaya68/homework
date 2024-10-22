@@ -154,3 +154,32 @@ changeColorButton.addEventListener('click', function () {
 function getRandomNumber(max) {
     return Math.floor(Math.random() * (max + 1));
 }
+
+
+//Прокрутка полосы
+const headerLine = document.querySelector('.header__line');
+let scrollPosition = 0;
+const scrollStep = 1;
+const scrollInterval = 50;
+
+setInterval(() => {
+    scrollPosition -= scrollStep;
+    headerLine.style.backgroundPosition = `${scrollPosition}px 0`;
+}, scrollInterval);
+
+
+
+
+const headerElement = document.querySelector('.header');
+const changeColorInterval = 400; // Интервал изменения цвета в миллисекундах
+
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
+
+function changeBackgroundColor() {
+    const randomColor = `rgba(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)}, 0.5)`;
+    headerElement.style.backgroundColor = randomColor;
+}
+
+setInterval(changeBackgroundColor, changeColorInterval);

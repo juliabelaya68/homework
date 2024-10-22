@@ -22,6 +22,8 @@ body {
   background-color: rgb(225, 255, 143);
 }
 
+
+
 .header__box {
   padding-top: 196px;
   max-width: 768px;
@@ -79,6 +81,8 @@ body {
   height: 90px;
   width: 100%;
   background-image: url(image/line.png);
+  background-repeat: repeat-x;
+  background-position: 0 0;
 
 }
 
