@@ -148,7 +148,26 @@ const changeColorButton = document.querySelector('#changeColorButton');
 changeColorButton.addEventListener('click', function () {
     const randomColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
     const mainElement = document.querySelector('.main');
+    const gamesElement = document.querySelector('.mini-games');
     mainElement.style.backgroundColor = randomColor;
+    gamesElement.style.backgroundColor = randomColor;
+});
+
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
+
+
+// мобильный генератор цветов
+
+const mobileColorButton = document.querySelector('#mobileColorButton');
+
+mobileColorButton.addEventListener('click', function () {
+    const randomColor = `rgb(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)})`;
+    const mainElement = document.querySelector('.main');
+    const gamesElement = document.querySelector('.mini-games');
+    mainElement.style.backgroundColor = randomColor;
+    gamesElement.style.backgroundColor = randomColor;
 });
 
 function getRandomNumber(max) {
@@ -169,17 +188,20 @@ setInterval(() => {
 
 
 
+document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-const headerElement = document.querySelector('.header');
-const changeColorInterval = 400; // Интервал изменения цвета в миллисекундах
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-function getRandomNumber(max) {
-    return Math.floor(Math.random() * (max + 1));
-}
 
-function changeBackgroundColor() {
-    const randomColor = `rgba(${getRandomNumber(255)}, ${getRandomNumber(255)}, ${getRandomNumber(255)}, 0.5)`;
-    headerElement.style.backgroundColor = randomColor;
-}
 
-setInterval(changeBackgroundColor, changeColorInterval);
+
+
+
+
+
